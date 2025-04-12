@@ -38,7 +38,7 @@ def buscar_video_mrbeast():
 
             screenshot_path = os.path.join(os.getcwd(), "youtube_result.png")
             driver.save_screenshot(screenshot_path)
-            print("📸 Captura guardada en:", screenshot_path)
+            print(" Captura guardada en:", screenshot_path)
 
             driver.quit()
 
@@ -46,7 +46,7 @@ def buscar_video_mrbeast():
             webbrowser.register('chrome', None, webbrowser.BackgroundBrowser(chrome_path))  
             webbrowser.get('chrome').open(video_encontrado[1])  
 
-            print("🔗 Video abierto en Google Chrome.")
+            print(" Video abierto en Google Chrome.")
 
         else:
             print("Video no encontrado.")
